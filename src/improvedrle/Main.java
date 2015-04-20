@@ -20,11 +20,11 @@ public class Main {
         for (int i = 0; i < wordLength; i++) {
             char currentCharacter = words.charAt(i);
             String currentConcatedWord = null;
-            if (i == 0) {//Eger 1ci simvoldursa
+            if (i == 0) {
                 k++;
                 currentConcatedWord = currentCharacter + "" + k;
                 encodeString.append(currentConcatedWord);               
-            } else if (i == wordLength - 1) {//eger sonuncu simvoldursa
+            } else if (i == wordLength - 1) {
                 char previousCharacter = words.charAt(i - 1);
 
                 String lastConcatedWord = previousCharacter + "" + k;
